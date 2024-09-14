@@ -1,0 +1,705 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 13 21:56:46 2024
+# Process ID: 30508
+# Current directory: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log TOP_file.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_file.tcl
+# Log file: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/TOP_file.vds
+# Journal file: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_file.tcl -notrace
+Command: synth_design -top TOP_file -part xcku060-ffva1517-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Device 21-403] Loading part xcku060-ffva1517-2-i
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5676 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1154.582 ; gain = 176.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_file' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/TOP_file.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/TOP_file.v:245]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'WRAP_SiTCP_GMII_XCKU_32K' [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V:28]
+	Parameter TIM_PERIOD bound to: 8'b11001000 
+INFO: [Synth 8-6157] synthesizing module 'TIMER' [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v:13]
+	Parameter TIM_PERIOD bound to: 8'b11000110 
+INFO: [Synth 8-6155] done synthesizing module 'TIMER' (4#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/TIMER.v:13]
+INFO: [Synth 8-6157] synthesizing module 'SiTCP_XCKU_32K_BBT_V110' [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V:28]
+INFO: [Synth 8-6155] done synthesizing module 'SiTCP_XCKU_32K_BBT_V110' (5#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.V:28]
+INFO: [Synth 8-6155] done synthesizing module 'WRAP_SiTCP_GMII_XCKU_32K' (6#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/WRAP_SiTCP_GMII_XCKU_32K.V:28]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_example_design' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:11]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:35032]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 300.000000 - type: float 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: float 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (7#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:35032]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (8#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_support' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:64]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:82]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:85]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:88]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:89]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:90]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:92]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:93]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:94]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:99]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:101]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:102]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:103]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:107]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:108]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:110]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:111]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:124]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:125]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:126]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:127]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/gig_ethernet_pcs_pma_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (9#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/gig_ethernet_pcs_pma_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_clocking' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33028]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (10#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33028]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT_SYNC' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1273]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT_SYNC' (11#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1273]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1251]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (12#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1251]
+WARNING: [Synth 8-7023] instance 'usrclk2_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 4 given [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:133]
+WARNING: [Synth 8-7023] instance 'usrclk_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 5 given [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:140]
+WARNING: [Synth 8-7023] instance 'rxrecclk_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 3 given [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_clocking' (13#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_resets' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:63]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_resets' (14#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:63]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core_resets_i'. This will prevent further optimization [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:217]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pcs_pma_i'. This will prevent further optimization [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:136]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core_clocking_i'. This will prevent further optimization [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_support' (15#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:64]
+WARNING: [Synth 8-7023] instance 'core_support_i' of module 'gig_ethernet_pcs_pma_0_support' has 30 connections declared, but only 29 given [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:126]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_reset_sync_ex' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_reset_sync_ex.v:62]
+	Parameter INITIALISE bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'FDP' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13591]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (16#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13591]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_reset_sync_ex' (17#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_reset_sync_ex.v:62]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:216]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (18#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (19#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1402]
+	Parameter BUFR_DIVIDE bound to: BYPASS - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (20#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1402]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_tx_elastic_buffer' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_tx_elastic_buffer.v:95]
+INFO: [Synth 8-6157] synthesizing module 'RAM16X1D' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:69844]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'RAM16X1D' (21#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:69844]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_sync_block_ex' [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_sync_block_ex.v:62]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'FD' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13423]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (22#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13423]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_sync_block_ex' (23#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_sync_block_ex.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_tx_elastic_buffer' (24#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_tx_elastic_buffer.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_example_design' (25#1) [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'status_vector' does not match port width (16) of module 'gig_ethernet_pcs_pma_0_example_design' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/TOP_file.v:227]
+INFO: [Synth 8-6157] synthesizing module 'fifio_gen' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/fifio_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (26#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/.Xil/Vivado-30508-DESKTOP-BA26H3B/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifio_gen' (27#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/fifio_gen.v:23]
+WARNING: [Synth 8-3848] Net EEPROM_DO in module/entity TOP_file does not have driver. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/TOP_file.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_file' (28#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/new/TOP_file.v:23]
+WARNING: [Synth 8-3917] design TOP_file has port firefly_reset_3_tx driven by constant 1
+WARNING: [Synth 8-3917] design TOP_file has port firefly_reset_3_rx driven by constant 1
+WARNING: [Synth 8-3331] design gig_ethernet_pcs_pma_0_clocking has unconnected port mmcm_reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1220.875 ; gain = 242.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1220.875 ; gain = 242.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1220.875 ; gain = 242.641
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'pcspma/core_support_i/pcs_pma_i'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'pcspma/core_support_i/pcs_pma_i'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'fifo/fifo'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'fifo/fifo'
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc]
+WARNING: [Vivado 12-584] No ports matched 'io_refclk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'independent_clock'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sysclk_200'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:14]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:27]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:27]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:27]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:29]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:29]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:31]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:31]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_file_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test_23.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test_23.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test_23.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_file_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_file_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__0/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__1/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__2/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/SetPauseTime_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/crcOk_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[4]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[5]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/ipgOk_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/muxSel_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/muxSel_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/muxSel_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/muxSel_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/rcvdMacFlow_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/rxErr_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/rxPay_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/rxPrlTim_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_RXCNT/rxSfd_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__0/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__1/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__2/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[5]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[6]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[7]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[8]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgOk_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/irMacPauseExe_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/irMacPauseExe_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/irMacPauseExe_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/irMacPauseExe_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/macPauseExe_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/macPauseExe_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/macPauseLd_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/macPauseLd_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memRe_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[10]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[4]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[5]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[6]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[7]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[8]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/memWa_reg[9]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[10]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[11]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[12]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[13]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[14]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[15]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[16]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[17]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[18]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[19]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[20]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[21]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[22]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[23]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[4]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[5]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[6]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[7]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[8]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pasuseCntr_reg[9]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pauseEnb_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/pauseExe_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/rdOk_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/rdReq_reg/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__0/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__1/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__2/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[1]/PRE'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXCNT/ipgCnt_reg[4]/PRE'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__0/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__1/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/SiTCP_INT/SiTCP_RESET_OUT_reg_rep__2/C'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[0]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[10]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[1]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[2]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[3]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[4]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[5]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[6]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[7]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'sitcp/SiTCP/GMII/GMII_TXBUF/bank0LastWrAddr_reg[8]/CLR'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+INFO: [Common 17-14] Message 'Vivado 12-508' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc:7]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_file_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_file_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_file_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1296.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 83 instances were transformed.
+  BUFG => BUFGCE: 5 instances
+  BUFIO => BUFGCE: 1 instances
+  FD => FDRE: 48 instances
+  FDP => FDPE: 18 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1296.574 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1296.574 ; gain = 318.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku060-ffva1517-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1296.574 ; gain = 318.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rxn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for rxp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for txn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for txp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 10).
+Applied set_property DONT_TOUCH = true for pcspma/core_support_i/pcs_pma_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fifo/fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1296.574 ; gain = 318.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1296.574 ; gain = 318.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 13    
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TIMER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module WRAP_SiTCP_GMII_XCKU_32K 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module gig_ethernet_pcs_pma_0_resets 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module gig_ethernet_pcs_pma_0_tx_elastic_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 11    
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module gig_ethernet_pcs_pma_0_example_design 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2760 (col length:120)
+BRAMs: 2160 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design TOP_file has port firefly_reset_3_tx driven by constant 1
+WARNING: [Synth 8-3917] design TOP_file has port firefly_reset_3_rx driven by constant 1
+WARNING: [Synth 8-3331] design gig_ethernet_pcs_pma_0_clocking has unconnected port mmcm_reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1296.574 ; gain = 318.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pcspma/core_support_i/pcs_pma_i/rxoutclk' to pin 'pcspma/core_support_i/pcs_pma_i/bbstub_rxoutclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pcspma/core_support_i/pcs_pma_i/gtrefclk' to 'pcspma/core_support_i/core_clocking_i/ibufds_gtrefclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pcspma/core_support_i/pcs_pma_i/txoutclk' to pin 'pcspma/core_support_i/pcs_pma_i/bbstub_txoutclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pcspma/core_support_i/pcs_pma_i/gtrefclk' to 'pcspma/core_support_i/core_clocking_i/ibufds_gtrefclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_in1' to pin 'IBUFDS_inst/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'instance_name/clk_in1' to 'IBUFDS_inst/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out2' to pin 'instance_name/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'instance_name/clk_in1' to 'IBUFDS_inst/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out3' to pin 'instance_name/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'instance_name/clk_in1' to 'IBUFDS_inst/O'
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1431.363 ; gain = 453.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1451.879 ; gain = 473.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1453.203 ; gain = 474.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:81]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:81]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:81]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/DELL/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:81]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |clk_wiz_0               |         1|
+|2     |fifo_generator_0        |         1|
+|3     |gig_ethernet_pcs_pma_0  |         1|
+|4     |SiTCP_XCKU_32K_BBT_V110 |         1|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |SiTCP_XCKU_32K_BBT_V110 |     1|
+|2     |clk_wiz_0               |     1|
+|3     |fifo_generator_0        |     1|
+|4     |gig_ethernet_pcs_pma_0  |     1|
+|5     |BUFG                    |     5|
+|6     |BUFG_GT                 |     3|
+|7     |BUFG_GT_SYNC            |     1|
+|8     |BUFIO                   |     1|
+|9     |BUFR                    |     1|
+|10    |IBUFDS_GTE3             |     1|
+|11    |IDELAYCTRL              |     1|
+|12    |IDELAYE3                |    10|
+|13    |LUT1                    |     5|
+|14    |LUT2                    |    15|
+|15    |LUT3                    |    14|
+|16    |LUT4                    |    22|
+|17    |LUT5                    |    11|
+|18    |LUT6                    |    24|
+|19    |RAM16X1D                |    10|
+|20    |FD                      |    48|
+|21    |FDP                     |    18|
+|22    |FDPE                    |     4|
+|23    |FDRE                    |   139|
+|24    |FDSE                    |    13|
+|25    |IBUFDS                  |     1|
+|26    |OBUF                    |    12|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------------------------+-----------------------------------------+------+
+|      |Instance                                        |Module                                   |Cells |
++------+------------------------------------------------+-----------------------------------------+------+
+|1     |top                                             |                                         |   770|
+|2     |  fifo                                          |fifio_gen                                |    23|
+|3     |  pcspma                                        |gig_ethernet_pcs_pma_0_example_design    |   296|
+|4     |    core_support_i                              |gig_ethernet_pcs_pma_0_support           |    45|
+|5     |      core_clocking_i                           |gig_ethernet_pcs_pma_0_clocking          |     5|
+|6     |      core_resets_i                             |gig_ethernet_pcs_pma_0_resets            |     4|
+|7     |    idelayctrl_reset_gen                        |gig_ethernet_pcs_pma_0_reset_sync_ex     |     6|
+|8     |    tx_elastic_buffer_inst                      |gig_ethernet_pcs_pma_0_tx_elastic_buffer |   179|
+|9     |      gen_rd_reset                              |gig_ethernet_pcs_pma_0_reset_sync_ex_0   |     7|
+|10    |      gen_wr_reset                              |gig_ethernet_pcs_pma_0_reset_sync_ex_1   |     7|
+|11    |      \reclock_rd_addrgray[0].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex     |     8|
+|12    |      \reclock_rd_addrgray[1].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_2   |     6|
+|13    |      \reclock_rd_addrgray[2].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_3   |     9|
+|14    |      \reclock_rd_addrgray[3].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_4   |     6|
+|15    |      \reclock_wr_addrgray[0].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_5   |     8|
+|16    |      \reclock_wr_addrgray[1].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_6   |     6|
+|17    |      \reclock_wr_addrgray[2].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_7   |     9|
+|18    |      \reclock_wr_addrgray[3].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_8   |     6|
+|19    |  sitcp                                         |WRAP_SiTCP_GMII_XCKU_32K                 |   441|
+|20    |    TIMER                                       |TIMER                                    |    91|
++------+------------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1458.965 ; gain = 405.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1458.965 ; gain = 480.730
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf]
+Finished Parsing EDIF File [C:/Users/DELL/Desktop/mft_k7_project/8.7/SiTCP_Netlist_for_Kintex_UltraScale-master/SiTCP_XCKU_32K_BBT_V110.edf]
+INFO: [Netlist 29-17] Analyzing 318 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[0].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[1].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[2].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[3].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[4].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[5].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[6].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_bus[7].rx_data_bits 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_error 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. pcspma/rx_data_valid 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1521.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  BUFG => BUFGCE: 5 instances
+  BUFIO => BUFGCE: 1 instances
+  BUFR => BUFGCE: 1 instances
+  FD => FDRE: 48 instances
+  FDP => FDPE: 18 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+116 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1521.918 ; gain = 1124.133
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1521.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/TOP_file.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_file_utilization_synth.rpt -pb TOP_file_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 21:57:25 2024...

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 21 20:43:31 2024
+# Process ID: 29312
+# Current directory: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex
+# Command line: vivado.exe -notrace -source c:/Users/44497/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_ex.tcl
+# Log file: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/vivado.log
+# Journal file: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/44497/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+open_project C:/Users/44497/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/project_1_firefly/project_1_firefly.xpr
+update_compile_order -fileset sources_1
+close_project

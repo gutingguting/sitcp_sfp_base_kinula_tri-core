@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Time: 0 | txp: x | txn: x | firefly_reset_3_tx: 1 | firefly_reset_3_rx: 1
+Time: 0 | txp: 1 | txn: 1 | firefly_reset_3_tx: 1 | firefly_reset_3_rx: 1
+Info: [Unisim IDELAYCTRL-1] RST simulation behaviour for SIM_DEVICE ULTRASCALE may not match hardware behaviour when I/ODELAY DELAY_FORMAT = TIME if SelectIO User Guide recommendation for I/ODELAY connections or reset sequence are not followed. For more information, refer to the Select IO Userguide. Instance: TOP_file_tb.uut.pcspma.core_idelayctrl_i
+Info: [Unisim IDELAYCTRL-1] RST simulation behaviour for SIM_DEVICE ULTRASCALE may not match hardware behaviour when I/ODELAY DELAY_FORMAT = TIME if SelectIO User Guide recommendation for I/ODELAY connections or reset sequence are not followed. For more information, refer to the Select IO Userguide. Instance: TOP_file_tb.uut.pcspma.core_idelayctrl_i_REPLICATED_0
+$finish called at time : 800 ns : File "C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sim_1/new/test_1_tb.v" Line 72

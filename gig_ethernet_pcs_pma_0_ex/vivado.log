@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 21 20:43:31 2024
+# Process ID: 29312
+# Current directory: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex
+# Command line: vivado.exe -notrace -source c:/Users/44497/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_ex.tcl
+# Log file: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/vivado.log
+# Journal file: c:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/44497/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 892.527 ; gain = 160.480
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Rebuilding all the top level IPs ...
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/xsim/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/xsim/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/modelsim/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/modelsim/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/questa/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/questa/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/ies/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/ies/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/vcs/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/vcs/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/riviera/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/riviera/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/activehdl/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/activehdl/configure_gt.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/xcelium/gig_ethernet_pcs_pma_0.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/44497/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.ip_user_files/sim_scripts/gig_ethernet_pcs_pma_0/xcelium/configure_gt.tcl'
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+open_project C:/Users/44497/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/project_1_firefly/project_1_firefly.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/44497/Desktop/mft_k7_project/sitcp_test/project_6_kin_ula_smgii/project_1_firefly'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 22 16:51:17 2024...

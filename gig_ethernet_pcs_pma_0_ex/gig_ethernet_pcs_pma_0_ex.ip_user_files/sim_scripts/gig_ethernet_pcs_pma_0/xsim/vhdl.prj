@@ -1,0 +1,4 @@
+vhdl gig_ethernet_pcs_pma_v16_1_6  \
+"../../../ipstatic/hdl/gig_ethernet_pcs_pma_v16_1_rfs.vhd" \
+
+nosort

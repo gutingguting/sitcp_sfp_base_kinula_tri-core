@@ -1,0 +1,450 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  9 15:51:01 2024
+# Process ID: 8312
+# Current directory: C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1
+# Command line: vivado.exe -log gig_ethernet_pcs_pma_0_example_design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gig_ethernet_pcs_pma_0_example_design.tcl
+# Log file: C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/gig_ethernet_pcs_pma_0_example_design.vds
+# Journal file: C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gig_ethernet_pcs_pma_0_example_design.tcl -notrace
+Command: synth_design -top gig_ethernet_pcs_pma_0_example_design -part xcku060-ffva1517-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Device 21-403] Loading part xcku060-ffva1517-2-i
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18868 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1152.180 ; gain = 178.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_example_design' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:73]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:35032]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 300.000000 - type: float 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: float 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (1#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:35032]
+INFO: [Synth 8-6157] synthesizing module 'OBUFT' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46291]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFT' (2#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46291]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_support' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:64]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/.Xil/Vivado-8312-DESKTOP-BA26H3B/realtime/gig_ethernet_pcs_pma_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (4#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/.Xil/Vivado-8312-DESKTOP-BA26H3B/realtime/gig_ethernet_pcs_pma_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_clocking' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33028]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (5#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33028]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1251]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (6#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1251]
+WARNING: [Synth 8-7023] instance 'usrclk2_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 3 given [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:103]
+WARNING: [Synth 8-7023] instance 'usrclk_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 4 given [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:109]
+WARNING: [Synth 8-7023] instance 'rxrecclk_bufg_inst' of module 'BUFG_GT' has 7 connections declared, but only 3 given [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_clocking' (7#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_resets' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:63]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_resets' (8#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_support' (9#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v:64]
+WARNING: [Synth 8-7023] instance 'core_support_i' of module 'gig_ethernet_pcs_pma_0_support' has 30 connections declared, but only 29 given [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:181]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_reset_sync_ex' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_reset_sync_ex.v:62]
+	Parameter INITIALISE bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'FDP' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13591]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (10#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13591]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_reset_sync_ex' (11#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_reset_sync_ex.v:62]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:273]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (12#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (13#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1402]
+	Parameter BUFR_DIVIDE bound to: BYPASS - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (14#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1402]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_tx_elastic_buffer' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_tx_elastic_buffer.v:95]
+INFO: [Synth 8-6157] synthesizing module 'RAM16X1D' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:69844]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'RAM16X1D' (15#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:69844]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0_sync_block_ex' [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_sync_block_ex.v:62]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'FD' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13423]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (16#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13423]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_sync_block_ex' (17#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_sync_block_ex.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_tx_elastic_buffer' (18#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_tx_elastic_buffer.v:95]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:49468]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (19#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:49468]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0_example_design' (20#1) [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v:73]
+WARNING: [Synth 8-3331] design gig_ethernet_pcs_pma_0_clocking has unconnected port mmcm_reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1214.918 ; gain = 241.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.305 ; gain = 247.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.305 ; gain = 247.695
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'core_support_i/pcs_pma_i'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'core_support_i/pcs_pma_i'
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  BUFIO => BUFGCE: 1 instances
+  FD => FDRE: 48 instances
+  FDP => FDPE: 18 instances
+  ODDR => OSERDESE3: 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1339.492 ; gain = 3.957
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1339.492 ; gain = 365.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku060-ffva1517-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1339.492 ; gain = 365.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rxn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for rxp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for txn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txn. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for txp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txp. (constraint file  c:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc, line 10).
+Applied set_property DONT_TOUCH = true for core_support_i/pcs_pma_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1339.492 ; gain = 365.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1339.492 ; gain = 365.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 13    
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gig_ethernet_pcs_pma_0_example_design 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gig_ethernet_pcs_pma_0_resets 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module gig_ethernet_pcs_pma_0_tx_elastic_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 11    
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2760 (col length:120)
+BRAMs: 2160 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1339.492 ; gain = 365.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'core_support_i/pcs_pma_i/rxoutclk' to pin 'core_support_i/pcs_pma_i/bbstub_rxoutclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'core_support_i/pcs_pma_i/gtrefclk' to 'core_support_i/core_clocking_i/ibufds_gtrefclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'core_support_i/pcs_pma_i/txoutclk' to pin 'core_support_i/pcs_pma_i/bbstub_txoutclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'core_support_i/pcs_pma_i/gtrefclk' to 'core_support_i/core_clocking_i/ibufds_gtrefclk/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1426.047 ; gain = 452.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1435.723 ; gain = 462.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1437.461 ; gain = 463.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------+----------+
+|      |BlackBox name          |Instances |
++------+-----------------------+----------+
+|1     |gig_ethernet_pcs_pma_0 |         1|
++------+-----------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |gig_ethernet_pcs_pma_0 |     1|
+|2     |BUFG                   |     2|
+|3     |BUFG_GT                |     3|
+|4     |BUFIO                  |     1|
+|5     |BUFR                   |     1|
+|6     |IBUFDS_GTE3            |     1|
+|7     |IDELAYCTRL             |     1|
+|8     |IDELAYE3               |    10|
+|9     |LUT1                   |     2|
+|10    |LUT2                   |     9|
+|11    |LUT3                   |     5|
+|12    |LUT4                   |    13|
+|13    |LUT5                   |     2|
+|14    |LUT6                   |     8|
+|15    |ODDR                   |     1|
+|16    |RAM16X1D               |    10|
+|17    |FD                     |    48|
+|18    |FDP                    |    18|
+|19    |FDPE                   |     4|
+|20    |FDRE                   |   105|
+|21    |FDSE                   |     5|
+|22    |IBUF                   |    37|
+|23    |OBUF                   |    18|
+|24    |OBUFT                  |    11|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------+-----------------------------------------+------+
+|      |Instance                                      |Module                                   |Cells |
++------+----------------------------------------------+-----------------------------------------+------+
+|1     |top                                           |                                         |   351|
+|2     |  core_support_i                              |gig_ethernet_pcs_pma_0_support           |    44|
+|3     |    core_clocking_i                           |gig_ethernet_pcs_pma_0_clocking          |     4|
+|4     |    core_resets_i                             |gig_ethernet_pcs_pma_0_resets            |     4|
+|5     |  idelayctrl_reset_gen                        |gig_ethernet_pcs_pma_0_reset_sync_ex     |     6|
+|6     |  tx_elastic_buffer_inst                      |gig_ethernet_pcs_pma_0_tx_elastic_buffer |   179|
+|7     |    gen_rd_reset                              |gig_ethernet_pcs_pma_0_reset_sync_ex_0   |     7|
+|8     |    gen_wr_reset                              |gig_ethernet_pcs_pma_0_reset_sync_ex_1   |     7|
+|9     |    \reclock_rd_addrgray[0].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex     |     8|
+|10    |    \reclock_rd_addrgray[1].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_2   |     6|
+|11    |    \reclock_rd_addrgray[2].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_3   |     9|
+|12    |    \reclock_rd_addrgray[3].sync_rd_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_4   |     6|
+|13    |    \reclock_wr_addrgray[0].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_5   |     8|
+|14    |    \reclock_wr_addrgray[1].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_6   |     6|
+|15    |    \reclock_wr_addrgray[2].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_7   |     9|
+|16    |    \reclock_wr_addrgray[3].sync_wr_addrgray  |gig_ethernet_pcs_pma_0_sync_block_ex_8   |     6|
++------+----------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.246 ; gain = 361.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.246 ; gain = 479.637
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1495.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 118 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  BUFIO => BUFGCE: 1 instances
+  BUFR => BUFGCE: 1 instances
+  FD => FDRE: 48 instances
+  FDP => FDPE: 18 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 37 instances
+  ODDR => OSERDESE3: 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1495.059 ; gain = 1097.359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1495.059 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/mft_k7_project/8.7/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.runs/synth_1/gig_ethernet_pcs_pma_0_example_design.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gig_ethernet_pcs_pma_0_example_design_utilization_synth.rpt -pb gig_ethernet_pcs_pma_0_example_design_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 15:51:29 2024...

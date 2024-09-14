@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_sim_netlist.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_clocking.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_reset_sync_ex.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_resets.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_support.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_sync_block_ex.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_tx_elastic_buffer.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/stimulus_tb.v" \
+"../../../../../../sitcp_test/project_6_kin_ula_smgii/gig_ethernet_pcs_pma_0_ex/imports/demo_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

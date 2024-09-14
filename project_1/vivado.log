@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  2 20:14:37 2024
+# Process ID: 19232
+# Current directory: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9260 C:\Users\DELL\Desktop\mft_k7_project\8.7\project_1\project_1.xpr
+# Log file: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/vivado.log
+# Journal file: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/DELL/Desktop/8.7/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 852.590 ; gain = 167.254
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.PRIM_SOURCE {Global_buffer}] [get_ips clk_wiz_0]
+generate_target all [get_files  C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/clk_wiz_0_synth_1
+
+launch_runs -jobs 8 clk_wiz_0_synth_1
+[Mon Sep  2 20:25:44 2024] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' is already up-to-date
+[Mon Sep  2 20:25:56 2024] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/runme.log
+[Mon Sep  2 20:25:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' is already up-to-date
+[Mon Sep  2 21:06:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/runme.log
+[Mon Sep  2 21:06:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/impl_1/runme.log
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [Device 21-403] Loading part xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : SGMII
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : SGMII
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : kintexu
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xcku060-ffva1517-2-i
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' is already up-to-date
+[Mon Sep  2 21:28:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/runme.log
+[Mon Sep  2 21:28:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/impl_1/runme.log
+delete_fileset [ get_filesets constrs_2 ]
+file delete -force C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_2
+delete_fileset [ get_filesets constrs_1 ]
+file delete -force C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_1
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test9.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_3 C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test9.xdc
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_3
+Design is defaulting to synth run part: xcku060-ffva1517-2-i
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'fifo/fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'pcspma/core_support_i/pcs_pma_i'
+INFO: [Netlist 29-17] Analyzing 264 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'fifo/fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'fifo/fifo/U0'
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the negative port (N-side) 'CLK_200_p' of a differential pair cannot be placed on a positive package pin 'F38' (IOBM). [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:2]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'CLK_200_n' of a differential pair cannot be placed on a negative package pin 'E38' (IOBS). [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'io_refclk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports io_refclk]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'independent_clock'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:29]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports independent_clock]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sysclk_200'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:31]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk_200]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:35]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports gmii_tx_clk]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:35]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:48]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:48]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:48]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:48]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks gmii_tx_clk]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:48]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:50]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks gmii_tx_clk]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'gmii_tx_clk'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:52]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:52]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks gmii_tx_clk]'. [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc:52]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/gig_ethernet_pcs_pma_0_example_design.xdc]
+Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc]
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'pcspma/core_support_i/pcs_pma_i/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'fifo/fifo/U0'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'fifo/fifo/U0'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC pcspma/core_support_i/pcs_pma_i/inst/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[24].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT pcspma/core_support_i/core_clocking_i/rxrecclk_bufg_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC pcspma/core_support_i/pcs_pma_i/inst/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe3_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[24].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT pcspma/core_support_i/core_clocking_i/usrclk2_bufg_inst
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell fifo/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2083.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2392.664 ; gain = 690.602
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 3 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list sysclk_200 ]]
+set_property port_width 10 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {FIFO_DATA_COUNT[0]} {FIFO_DATA_COUNT[1]} {FIFO_DATA_COUNT[2]} {FIFO_DATA_COUNT[3]} {FIFO_DATA_COUNT[4]} {FIFO_DATA_COUNT[5]} {FIFO_DATA_COUNT[6]} {FIFO_DATA_COUNT[7]} {FIFO_DATA_COUNT[8]} {FIFO_DATA_COUNT[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {GMII_RXD[0]} {GMII_RXD[1]} {GMII_RXD[2]} {GMII_RXD[3]} {GMII_RXD[4]} {GMII_RXD[5]} {GMII_RXD[6]} {GMII_RXD[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {TCP_TX_DATA_ila[0]} {TCP_TX_DATA_ila[1]} {TCP_TX_DATA_ila[2]} {TCP_TX_DATA_ila[3]} {TCP_TX_DATA_ila[4]} {TCP_TX_DATA_ila[5]} {TCP_TX_DATA_ila[6]} {TCP_TX_DATA_ila[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {TCP_RX_DATA_ila[0]} {TCP_RX_DATA_ila[1]} {TCP_RX_DATA_ila[2]} {TCP_RX_DATA_ila[3]} {TCP_RX_DATA_ila[4]} {TCP_RX_DATA_ila[5]} {TCP_RX_DATA_ila[6]} {TCP_RX_DATA_ila[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list FIFO_RD_VALID ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list GMII_RSTn_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list GMII_RX_DV ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list GMII_RX_ER_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list GMII_TX_ER_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list lock_clk200 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list Nego_completed ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list rxuserclk2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list SiTCP_RST_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list status_vector_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list TCP_CLOSE_ACK_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list TCP_CLOSE_REQ_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list TCP_ERROR_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list TCP_OPEN_ACK_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list TCP_RX_WR_ila ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list TCP_TX_FULL_ila ]]
+close [ open C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test.xdc w ]
+add_files -fileset constrs_3 C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test.xdc
+set_property target_constrs_file C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test.xdc [current_fileset -constrset]
+save_constraints -force
+reorder_files -fileset constrs_3 -before C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/EDF_SiTCP_constraints.xdc C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/constrs_3/new/test.xdc
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' is already up-to-date
+[Mon Sep  2 21:49:04 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/runme.log
+[Mon Sep  2 21:49:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' is already up-to-date
+[Mon Sep  2 22:09:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/synth_1/runme.log
+[Mon Sep  2 22:09:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/DELL/Desktop/mft_k7_project/8.7/project_1/project_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  3 11:38:03 2024...
